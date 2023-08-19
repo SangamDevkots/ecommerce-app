@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { useAuth0 } from "@auth0/auth0-react";
+import { User, useAuth0 } from "@auth0/auth0-react";
 
-const Navbar = ({ userPicture }) => { // Receive userPicture prop
+const Navbar = ({ userPicture }) => { 
   const [Navbar, setNavbar]= useState (true);
   const count = useSelector((state) => state.user.cart.length);
   const { loginWithRedirect } = useAuth0();
@@ -44,7 +44,7 @@ const Navbar = ({ userPicture }) => { // Receive userPicture prop
 
   <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
     <span class="sr-only">Open user menu</span>
-    <img onClick={() => loginWithRedirect()} class={ userPicture } src="" alt="user photo"/>
+    <img onClick={() => loginWithRedirect()} src={userPicture} alt="user photo"/>
 </button>
 
 <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
