@@ -5,12 +5,10 @@ const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [alertVisible, setAlertVisible] = useState(true);
 
-  // Define a function to save user data in local storage
   const saveUserDataToLocalStorage = (userData) => {
     localStorage.setItem("userData", JSON.stringify(userData));
   };
 
-  // Define a function to get user data from local storage
   const getUserDataFromLocalStorage = () => {
     const userData = localStorage.getItem("userData");
     return userData ? JSON.parse(userData) : null;
@@ -18,17 +16,17 @@ const Profile = () => {
 
   useEffect(() => {
     if (isAuthenticated && !isLoading) {
-      // Save user data to local storage when the user is authenticated
+     
       saveUserDataToLocalStorage(user);
     }
   }, [user, isAuthenticated, isLoading]);
 
   useEffect(() => {
-    // Check if user data exists in local storage when the component mounts
+ 
     const userData = getUserDataFromLocalStorage();
 
     if (userData) {
-      // User data found in local storage, you can use it as needed
+ 
       console.log("User data from local storage:", userData);
     }
   }, []);

@@ -12,7 +12,7 @@ const Products = () => {
   const [profileData, setProfileData] = useState(null); // Initialize profileData as null
 
   useEffect(() => {
-    // Function to fetch products
+ 
     async function fetchProducts() {
       try {
         const response = await fetch('https://fakestoreapi.com/products');
@@ -23,7 +23,6 @@ const Products = () => {
       }
     }
 
-    // Function to get profile data from local storage
     function getProfileDataFromLocalStorage() {
       const userData = localStorage.getItem('userData');
       if (userData) {
@@ -33,13 +32,13 @@ const Products = () => {
     }
 
     fetchProducts();
-    getProfileDataFromLocalStorage(); // Call this function to get profile data
+    getProfileDataFromLocalStorage(); 
 
   }, []);
 
   return (
     <>
-      {profileData && <Profile profileData={profileData} />} {/* Pass profileData as a prop to the Profile component */}
+      {profileData && <Profile profileData={profileData} />}
       <section className='px-9 py-1'>
         <h3 className='font-bold'>All Products</h3>
         <div className="products grid md:grid-cols-3 gap-10 ">
