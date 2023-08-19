@@ -5,11 +5,11 @@ import  {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai';
 import {NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-
+import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
   const [Navbar, setNavbar]= useState (true)
   const count = useSelector((state) => state.user.cart.length)
-
+  const { loginWithRedirect } = useAuth0();
   return (
    <>
 <nav className=' w-full fixed-top top-0 right-0 z-10 flex justify-between px-10 shadow-md py-4  '>
@@ -38,7 +38,8 @@ const Navbar = () => {
 <li className=' absolute top-2 list-none  bg-violet-700 rounded-md  text-white  '>{count}</li>
   </div>
   <div className="login ">
-  <i className="fa-solid fa-user"></i>
+  <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>;
+
   </div>
 </div>
 {

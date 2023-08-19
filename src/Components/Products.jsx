@@ -4,7 +4,7 @@ import Singleproduct from './Singleproduct';
 import Cartslice from './Cartslice';
 import { Addcart, RemoveAllcart  } from './Cartslice';
 import { useDispatch } from 'react-redux';
-
+import Profile from './Profile';
 const Products = () => {
   const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
@@ -26,7 +26,7 @@ const Products = () => {
 
   return (
     <>
-  
+<Profile></Profile>
       <section className=' px-9 py-1 '>
      
         <h3 className=' font-bold '>All Products</h3>
