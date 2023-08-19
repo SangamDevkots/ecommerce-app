@@ -52,7 +52,7 @@ const Navbar = () => {
 </nav>
 
 <div className="mobile flex-col justify-center w-30 items-center  bg-black ">
-<ul className={ ` md:hidden items-center    text-white ${ Navbar ? ' hidden' : 'block w-screen  h-screen ' }  `} >
+<ul className={ ` md:hidden items-center    text-white ${ Navbar ? ' hidden' : 'p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-black' }  `} >
 
 <li><NavLink to="/products"> Home</NavLink></li>
 <li><NavLink to="/products"> Products </NavLink></li>

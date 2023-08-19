@@ -9,17 +9,7 @@ function Cart() {
   const totalPrice = useSelector((state) => state.user.totalPrice);
   const dispatch = useDispatch();
 
-  const handleAddToCart = (item) => {
-    dispatch(Addcart(item));
-  };
 
-  const handleRemoveFromCart = (itemId) => {
-    dispatch(Removecart(itemId));
-  };
-
-  const handleRemoveAllFromCart = () => {
-    dispatch(RemoveAllcart());
-  };
 
   return (
     <div className="min-h-screen bg-gray-100">
