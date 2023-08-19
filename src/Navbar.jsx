@@ -69,7 +69,7 @@ const Navbar = ({ userPicture }) => { // Receive userPicture prop
 </div>
 
     
-  {/* <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>; */}
+  <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>
 
   </div>
 </div>
