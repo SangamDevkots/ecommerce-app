@@ -34,10 +34,15 @@ const Profile = () => {
       )}
 
       {isAuthenticated && (
-        <div>
-          <img src={user.picture} alt={user.name} />
-          <h2>Welcome to my ecommerce, {user.name}!</h2>
-        </div>
+        // <div>
+        //   <img src={user.picture} alt={user.name} />
+        //   <h2>Welcome to my ecommerce, {user.name}!</h2>
+        // </div>
+        <div class="flex items-center">
+  <img src={user.picture} alt="User Icon" class="w-8 h-8" /> 
+  <span class="ml-2">   <h2>Welcome to my ecommerce, {user.name}!</h2></span>
+</div>
+
         
       )}
     </>
