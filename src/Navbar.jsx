@@ -44,7 +44,7 @@ const Navbar = ({ userPicture }) => { // Receive userPicture prop
 
   <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
     <span class="sr-only">Open user menu</span>
-    <img class={ userPicture } src="" alt="user photo"/>
+    <img onClick={() => loginWithRedirect()} class={ userPicture } src="" alt="user photo"/>
 </button>
 
 <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
@@ -69,7 +69,7 @@ const Navbar = ({ userPicture }) => { // Receive userPicture prop
 </div>
 
     
-  <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>
+  {/* <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button> */}
 
   </div>
 </div>
