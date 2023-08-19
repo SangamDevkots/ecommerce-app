@@ -10,7 +10,6 @@ const Navbar = () => {
   const [Navbar, setNavbar]= useState (true)
   const count = useSelector((state) => state.user.cart.length)
   const { loginWithRedirect } = useAuth0();
-  const { user, isAuthenticated, isLoading } = useAuth0();
   return (
    <>
 <nav className=' w-full fixed-top top-0 right-0 z-10 flex justify-between px-10 shadow-md py-4  '>
@@ -39,18 +38,9 @@ const Navbar = () => {
 <li className=' absolute top-2 list-none  bg-violet-700 rounded-md  text-white  '>{count}</li>
   </div>
   <div className="login ">
-  { !isAuthenticated && (
-     <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>
- 
-   )}
 
-   {isAuthenticated && (
-     <img src={user.picture} alt="User Icon" class="w-8 h-8" /> 
-
-     
-   )}
     
-  
+  <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>;
 
   </div>
 </div>
