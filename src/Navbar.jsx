@@ -44,7 +44,7 @@ const Navbar = ({ userPicture }) => {
 
   <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
     <span class="sr-only">Open user menu</span>
-    <img onClick={() => loginWithRedirect()} src={userPicture} alt=""/>
+    <img onClick={() => loginWithRedirect()} src={userPicture} alt="userphoto"/>
 </button>
 
 <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
