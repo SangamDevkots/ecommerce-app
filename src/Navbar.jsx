@@ -1,15 +1,16 @@
 
 
-import { useState } from 'react'
-import  {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai';
-import {NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
 import { useAuth0 } from "@auth0/auth0-react";
-const Navbar = () => {
-  const [Navbar, setNavbar]= useState (true)
-  const count = useSelector((state) => state.user.cart.length)
+
+const Navbar = ({ userPicture }) => { // Receive userPicture prop
+  const [Navbar, setNavbar]= useState (true);
+  const count = useSelector((state) => state.user.cart.length);
   const { loginWithRedirect } = useAuth0();
+
   return (
    <>
 <nav className=' w-full fixed-top top-0 right-0 z-10 flex justify-between px-10 shadow-md py-4  '>
@@ -34,13 +35,41 @@ const Navbar = () => {
   </form>
   
   <div className="cart mx-2">
+
+    
   <NavLink to="/cartitems">  <button> <i className="fa-solid fa-cart-shopping"></i></button> </NavLink>
 <li className=' absolute top-2 list-none  bg-violet-700 rounded-md  text-white  '>{count}</li>
   </div>
   <div className="login ">
 
+  <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
+    <span class="sr-only">Open user menu</span>
+    <img class={ userPicture } src="" alt="user photo"/>
+</button>
+
+<div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+    <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+      <div>Bonnie Green</div>
+      <div class="font-medium truncate">name@flowbite.com</div>
+    </div>
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+    </ul>
+    <div class="py-2">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+    </div>
+</div>
+
     
-  <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>;
+  {/* <button onClick={() => loginWithRedirect()}>  <i className="fa-solid fa-user"></i></button>; */}
 
   </div>
 </div>
