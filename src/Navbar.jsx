@@ -21,7 +21,7 @@ const Navbar = ({ userPicture }) => {
 <div className=" links">
 <ul className=' space-x-10 hidden md:flex items-center '>
 
-<li><NavLink to="/products"> Home</NavLink></li>
+<li><NavLink to="/home"> Home</NavLink></li>
 <li><NavLink to="/products"> Products </NavLink></li>
 <li><NavLink to="/products"> Contact </NavLink></li>
 </ul>

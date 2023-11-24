@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Products from './Components/Products';
 import Singleproduct from './Components/Singleproduct';
+import Home from './Components/Home';
 
 import Cartitems from './Components/Cartitems';
 
@@ -20,9 +21,10 @@ function App() {
 <Navbar />
       <Routes>
      
-          <Route index element={<Products />} />
-      
-          <Route path="products" element={<Products />} />
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+
+          <Route path="products" element={<Products  Products = {Products} />} />
           <Route path="cartitems" element={<Cartitems />} />
      <Route path="singleproduct/:id" element={<Singleproduct />} />
 
