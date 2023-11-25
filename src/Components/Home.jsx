@@ -24,8 +24,8 @@ const Home = () => {
 
   const images = [
     'https://t4.ftcdn.net/jpg/03/09/86/97/360_F_309869755_IquCHHxF7YABo2odctUGEjMrgVDSM8qV.jpg',
-    '',
-    'https://example.com/image3.jpg',
+    'https://t4.ftcdn.net/jpg/03/09/86/97/360_F_309869755_IquCHHxF7YABo2odctUGEjMrgVDSM8qV.jpg',
+    'https://t4.ftcdn.net/jpg/03/09/86/97/360_F_309869755_IquCHHxF7YABo2odctUGEjMrgVDSM8qV.jpg',
   ];
 
   const sliderSettings = {
@@ -47,7 +47,7 @@ const Home = () => {
             <Slider {...sliderSettings} className="mx-auto max-w-4xl">
               {images.map((image, index) => (
                 <div key={index}>
-                  <img className="w-full" src={image} alt={`Slide ${index + 1}`} />
+                  <img className="w-full  " src={image} alt={`Slide ${index + 1}`} />
                 </div>
               ))}
             </Slider>

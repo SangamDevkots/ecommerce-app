@@ -16,7 +16,7 @@ const Navbar = ({ userPicture }) => {
           <h1>SennGm Store</h1>
         </div>
         <div className="links hidden md:flex items-center space-x-10">
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/products">Products</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>
