@@ -1,3 +1,6 @@
+
+
+
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -35,9 +38,8 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white py-10 ">
       {profileData && <Profile profileData={profileData} />}
-      <section className="container mx-auto my-8">
-        <h3 className="text-3xl font-bold mb-4">All Products</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
+      <section className="container mx-auto my-8 flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <div key={index} className="bg-gray-800 shadow-md rounded-md text-white p-6 transition duration-300 transform hover:scale-105">
               <img className="h-32 object-cover mb-4" src={product.image} alt={product.title} />

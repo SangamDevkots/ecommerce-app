@@ -27,13 +27,13 @@ const Singleproduct = () => {
 
 
   return (
-    <div className="bg-white">
+    <div className=" min-h-screen bg-gray-900 text-white py-10">
     <div className="pt-6">
       <nav aria-label="Breadcrumb">
         <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <li>
             <div className="flex items-center">
-              <a href="#" className="mr-2 text-sm font-medium text-gray-900">Men</a>
+              <a href="#" className="mr-2 text-sm font-medium text-white ">Men</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" className="h-5 w-4 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
@@ -41,7 +41,7 @@ const Singleproduct = () => {
           </li>
           <li>
             <div className="flex items-center">
-              <a href="#" className="mr-2 text-sm font-medium text-gray-900">Clothing</a>
+              <a href="#" className="mr-2 text-sm font-medium text-white">Clothing</a>
               <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" className="h-5 w-4 text-gray-300">
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
@@ -49,7 +49,7 @@ const Singleproduct = () => {
           </li>
   
           <li className="text-sm">
-            <a href="#" aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">Basic Tee 6-Pack</a>
+            <a href="#" aria-current="page" className="font-medium text-white hover:text-white">Basic Tee 6-Pack</a>
           </li>
         </ol>
       </nav>
@@ -75,13 +75,13 @@ const Singleproduct = () => {
 
       <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
         <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{items.title}</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">{items.title}</h1>
         </div>
   
 
         <div className="mt-4 lg:row-span-3 lg:mt-0">
           <h2 className="sr-only">Product information</h2>
-          <p className="text-3xl tracking-tight text-gray-900">{items.price}</p>
+          <p className="text-3xl tracking-tight text-white ">{items.price}</p>
   
 
           <div className="mt-6">
@@ -89,24 +89,24 @@ const Singleproduct = () => {
             <div className="flex items-center">
               <div className="flex items-center">
          
-                <svg className="text-gray-900 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
-                <svg className="text-gray-900 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
-                <svg className="text-gray-900 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
-                <svg className="text-gray-900 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
-                <svg className="text-gray-200 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                 </svg>
               </div>
               <p className="sr-only">4 out of 5 stars</p>
-              <a href="#" className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">117 reviews</a>
+              <a href="#" className="ml-3 text-sm font-medium text-whitehover:text-indigo-500">117 reviews</a>
             </div>
           </div>
   
@@ -129,8 +129,8 @@ const Singleproduct = () => {
              
                   <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none ring-gray-900">
                     <input type="radio" name="color-choice" value="Black" className="sr-only" aria-labelledby="color-choice-2-label"/>
-                    <span id="color-choice-2-label" className="sr-only">Black</span>
-                    <span aria-hidden="true" className="h-8 w-8 bg-gray-900 rounded-full border border-black border-opacity-10"></span>
+                    <span id="color-choice-2-label text-white" className="sr-only">Black</span>
+                    <span aria-hidden="true" className="h-8 w-8 text-black rounded-full border border-red border-opacity-10"></span>
                   </label>
                 </div>
               </fieldset>
@@ -155,23 +155,23 @@ const Singleproduct = () => {
           </div>
   
           <div className="mt-10">
-            <h3 className="text-sm font-medium text-gray-900">Highlights</h3>
+            <h3 className="text-sm font-medium text-white">Highlights</h3>
   
             <div className="mt-4">
               <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
-                <li className="text-gray-400"><span className="text-gray-600">Hand cut and sewn locally</span></li>
-                <li className="text-gray-400"><span className="text-gray-600">Dyed with our proprietary colors</span></li>
-                <li className="text-gray-400"><span className="text-gray-600">Pre-washed &amp; pre-shrunk</span></li>
-                <li className="text-gray-400"><span className="text-gray-600">Ultra-soft 100% cotton</span></li>
+                <li className="text-white"><span className="text-white">Hand cut and sewn locally</span></li>
+                <li className="text-white"><span className="text-white">Dyed with our proprietary colors</span></li>
+                <li className="text-white"><span className="text-white">Pre-washed &amp; pre-shrunk</span></li>
+                <li className="text-white"><span className="text-white">Ultra-soft 100% cotton</span></li>
               </ul>
             </div>
           </div>
   
           <div className="mt-10">
-            <h2 className="text-sm font-medium text-gray-900">Details</h2>
+            <h2 className="text-sm font-medium text-white">Details</h2>
   
             <div className="mt-4 space-y-6">
-              <p className="text-sm text-gray-600">The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming &quot;Charcoal Gray&quot; limited release.</p>
+              <p className="text-sm text-white">The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming &quot;Charcoal Gray&quot; limited release.</p>
             </div>
           </div>
         </div>
