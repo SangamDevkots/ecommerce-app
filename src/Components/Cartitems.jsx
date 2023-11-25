@@ -10,7 +10,7 @@ function Cart() {
   const dispatch = useDispatch();
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-900  py-10 ">
       {/* Header */}
       <header className="bg-white py-4 shadow-md">
         <div className="container mx-auto">
@@ -18,7 +18,7 @@ function Cart() {
         </div>
       </header>
 
-      <section className="py-8">
+      <section className="py-8  ">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {cart.map((product) => (
